@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download PDF</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <main>
+    <h1>Downloading a PDF</h1>
+    <p>Use an <code>&lt;a&gt;</code> element and set the <code>href</code> attribute to the file location. Add the
+      <code>download</code> attribute to force the file to download instead of opening in the browser.</p>
+    <ul>
+      <li><a href="files/mr-bubz.pdf">This should open in a browser window</a></li>
+      <li><a href="files/mr-bubz.pdf" download>This has the download attribute</a></li>
+    </ul>
+    <p>Following the <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy">same-origin</a>
+      policy, the
+      <code>download</code> attribute will only work if the file is hosted on the same domain as the HTML file.</p>
+  </main>
+</body>
+
+</html>
